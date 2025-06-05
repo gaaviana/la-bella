@@ -1,0 +1,240 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* CSS PARA O HEADER E MENU */
+header {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.botao-menu {
+    border: none;
+    background-color: white;
+    width: 10px;
+    
+}
+
+.logo img{
+    height: 10vh;
+}
+
+.menu {
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 10vh;
+    height: 100vh;
+}
+
+.menu.ativo {
+  display: flex;
+  z-index: 1000;
+}
+
+.menu-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 100vw;
+    padding: 0 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    max-width: 100%;
+    text-align: start;
+}
+
+.menu i {
+    width: 25px;
+    padding-left: 1rem;
+}
+
+.link {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.link:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* CSS HERO */
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.barra {
+    height: 3vh;
+    width: 100%;
+    background-color: #009246;
+}
+
+/* CSS SESSÃO DESCONTO */
+
+.rewards {
+    background-color: rgba(0, 146, 70, 0.5); 
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.rewards-texto {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rewards-botao {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem;
+}
+
+.rewards-botao:hover {
+    background-color: hsla(149, 98%, 22%, 0.5);
+    transform: scale(1.1);
+}
+
+/* CSS CARROSSEL */
+
+.sessao-carrossel {
+    background-color: #F5F5DC ;
+}
+
+.carrossel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.carrossel-lista {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel-imagem {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.carrossel-item {
+    min-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.carrossel-info {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 800;
+    padding: 2rem;
+}
+
+.descricao {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+.preco {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.anterior,
+.proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.anterior {
+  left: 15px;
+}
+
+.proximo {
+  right: 15px;
+}
+
+.anterior:hover,
+.proximo:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* CSS DESCUBRA */
+.descubra  {
+    text-decoration: none ;
+}
+
+.descubra-botao {
+    margin: 2rem;
+    padding: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CE2B37;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 40vw;
+}
+
+
