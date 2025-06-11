@@ -33,9 +33,9 @@ $listarProdutos = $produtoServico->listarTodos();
         </section>
 
         <section>
-            <div class="rewards">
-                <p class="rewards-texto">Junte-se ao Clube Bella e ganhe recompensas a cada pizza!</p>
-                <button class="rewards-botao">Saiba mais</button>
+            <div class="recompensas">
+                <p class="recompensas-texto">Junte-se ao Clube Bella e ganhe recompensas a cada pizza!</p>
+                <button class="recompensas-botao">Saiba mais</button>
             </div>
         </section>
 

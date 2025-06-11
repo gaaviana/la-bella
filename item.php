@@ -23,41 +23,41 @@ $listarUm = $produtoServico->listarUm($id);
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header-left">
-            <a href="cardapio.php" class="back-arrow"><i class="fa-solid fa-reply fa-2xs"></i></a>
+    <header class="cabecalho">
+        <div class="cabecalho-esquerda">
+            <a href="cardapio.php" class="seta-voltar"><i class="fa-solid fa-reply fa-2xs"></i></a>
             <h1>Lá Bella</h1>
         </div>
-        <div class="header-right">
-            <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        <div class="cabecalho-direita">
+            <a href="#" class="icone-carrinho"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
 
-    <main class="item-detail">
-        <div class="item-image-placeholder"></div>
-        <div class="item-info">
-            <h2 class="item-name"><?=$listarUm['nome']?></h2>
-            <span class="item-price"><?=$listarUm['preco']?></span>
+    <main class="detalhe-item">
+        <div class="imagem-item-placeholder"></div>
+        <div class="info-item">
+            <h2 class="nome-item"><?=$listarUm['nome']?></h2>
+            <span class="preco-item"><?=$listarUm['preco']?></span>
         </div>
-        <p class="item-description"><?=$listarUm['descricao']?></p>
+        <p class="descricao-item"><?=$listarUm['descricao']?></p>
 
-        <div class="options-section">
-            <div class="option-box">
+        <div class="secao-opcoes">
+            <div class="caixa-opcao">
                 <span>Deseja adicionar algum item?</span>
-                <span class="arrow-down">V</span>
+                <span class="seta-baixo">V</span>
             </div>
-            <div class="option-box">
+            <div class="caixa-opcao">
                 <span>Deseja retirar algum item?</span>
-                <span class="arrow-down">V</span>
+                <span class="seta-baixo">V</span>
             </div>
         </div>
 
-        <div class="observation-section">
+        <div class="secao-observacao">
             <label for="observation">Observação:</label>
             <textarea id="observation" rows="5"></textarea>
         </div>
 
-        <button class="add-to-cart-button">ADICIONAR AO CARRINHO</button>
+        <button class="botao-adicionar-carrinho">ADICIONAR AO CARRINHO</button>
     </main>
 
    <?php include "./includes/rodape.php" ?>

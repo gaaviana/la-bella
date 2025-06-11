@@ -56,7 +56,7 @@ header {
     z-index: 1000;
 }
 
-.menu-header {
+.menu-cabecalho {
     width: 100%;
     position: absolute;
     top: 0;
@@ -122,19 +122,19 @@ header {
 
 /* CSS SESSÃO DESCONTO */
 
-.rewards {
+.recompensas {
     background-color: rgba(0, 146, 70, 0.5);
     padding: 2rem;
     margin: 2rem 0;
 }
 
-.rewards-texto {
+.recompensas-texto {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
 }
 
-.rewards-botao {
+.recompensas-botao {
     background-color: transparent;
     border-radius: 10px;
     width: 30vw;
@@ -144,85 +144,51 @@ header {
     padding: .5rem;
 }
 
-.rewards-botao:hover {
+.recompensas-botao:hover {
     background-color: hsla(149, 98%, 22%, 0.5);
     transform: scale(1.1);
 }
 
 /* CSS CARROSSEL */
 
-.sessao-carrossel {
-    background-color: #F5F5DC;
-}
-
 .carrossel {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    z-index: 1;
+    // ... existing code ...
 }
 
 .carrossel-lista {
-    display: flex;
-    transition: transform 0.5s ease;
+    // ... existing code ...
 }
 
-.carrossel-imagem {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
+.carrossel-item {
+    // ... existing code ...
 }
 
 .carrossel-info {
-    width: 100%;
+    // ... existing code ...
+}
+
+.carrossel-imagem {
+    // ... existing code ...
 }
 
 .titulo {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 800;
-    padding: 2rem;
+    // ... existing code ...
 }
 
 .descricao {
-    font-size: 1rem;
-    margin: 0.2rem 0;
+    // ... existing code ...
 }
 
 .preco {
-    margin-top: 0.5rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.anterior,
-.proximo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: black;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    z-index: 10;
+    // ... existing code ...
 }
 
 .anterior {
-    left: 15px;
+    // ... existing code ...
 }
 
 .proximo {
-    right: 15px;
-}
-
-.anterior:hover,
-.proximo:hover {
-    transform: translateY(-50%) scale(1.1);
+    // ... existing code ...
 }
 
 /* CSS DESCUBRA */
@@ -366,10 +332,9 @@ header {
     padding: 1rem;
 }
 
-.item-imagem {
+.item-imagem img {
     width: 100px;
     height: 100px;
-    background-color: #e0e0e0;
     border-radius: 4px;
     flex-shrink: 0;
 }
@@ -409,7 +374,7 @@ header {
 }
 
 /* CSS PARA A PÁGINA DO ITEM */
-.header {
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -422,71 +387,71 @@ header {
     z-index: 1000;
 }
 
-.header-left {
+.cabecalho-esquerda {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.header-left h1 {
+.cabecalho-esquerda h1 {
     margin: 0;
     font-size: 1.5rem;
 }
 
-.back-arrow {
+.seta-voltar {
     color: white;
     text-decoration: none;
     font-size: 2rem;
 }
 
-.cart-icon {
+.icone-carrinho {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-.item-detail {
+.detalhe-item {
     padding: 1rem;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.item-image-placeholder {
+.imagem-item-placeholder {
     width: 100%;
     height: 200px;
     background-color: #D3D3D3;
     margin-bottom: 1rem;
 }
 
-.item-info {
+.info-item {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.5rem;
 }
 
-.item-name {
+.nome-item {
     font-size: 2rem;
     margin: 0;
     font-weight: bold;
 }
 
-.item-price {
+.preco-item {
     font-size: 1.8rem;
     font-weight: bold;
 }
 
-.item-description {
+.descricao-item {
     font-size: 1rem;
     color: #555;
     margin-bottom: 1.5rem;
 }
 
-.options-section {
+.secao-opcoes {
     margin-bottom: 1.5rem;
 }
 
-.option-box {
+.caixa-opcao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -497,21 +462,21 @@ header {
     font-size: 1.1rem;
 }
 
-.arrow-down {
+.seta-baixo {
     font-weight: bold;
 }
 
-.observation-section {
+.secao-observacao {
     margin-bottom: 1.5rem;
 }
 
-.observation-section label {
+.secao-observacao label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.observation-section textarea {
+.secao-observacao textarea {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ccc;
@@ -520,7 +485,7 @@ header {
     resize: vertical;
 }
 
-.add-to-cart-button {
+.botao-adicionar-carrinho {
     width: 100%;
     padding: 1rem;
     background-color: #E6E6CC;
@@ -533,7 +498,7 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.add-to-cart-button:hover {
+.botao-adicionar-carrinho:hover {
     background-color: #D3D3B0;
 }
 

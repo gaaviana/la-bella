@@ -24,7 +24,7 @@ $listarProdutos = $produtoServico->listarTodos();
 <body>
     <?php include "./includes/cabecalho.php" ?>
     <main>
-        <section class="cardapio-secao">
+        <section class="secao-cardapio">
             <h1 class="cardapio-titulo">M E N U</h1>
             <div class="cardapio-categorias">
                 <button class="categoria-botao destaque" style="display: none;">DESTAQUE</button>
@@ -35,7 +35,7 @@ $listarProdutos = $produtoServico->listarTodos();
                 <?php foreach($listarProdutos as $produto) {?>
                 <a href="item.php?item=<?=$produto['id']?>" class="cardapio-item-link">
                     <div class="cardapio-item">
-                        <div class="item-imagem"></div>
+                        <div class="item-imagem"><img src="./images/pizza.png" alt=""></div>
                         <div class="item-info">
                             <h2 class="item-titulo"><?=$produto['nome']?></h2>
                             <p class="item-descricao"><?=$produto['descricao']?></p>
