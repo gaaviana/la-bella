@@ -12,11 +12,10 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <a href="cardapio.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+            <a href="cardapio.php" class="back-arrow"><i class="fa-solid fa-reply fa-2xs"></i></a>
             <h1>Lá Bella</h1>
         </div>
         <div class="header-right">
-            <a href="index.html" class="menu-icon"><i class="fas fa-home"></i></a>
             <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
@@ -48,15 +47,6 @@
         <button class="add-to-cart-button">ADICIONAR AO CARRINHO</button>
     </main>
 
-    <footer class="footer">
-        <div class="rodape">
-            <ul class="links-rodape">
-                <li class="link-rodape"><i class="fas fa-utensils"></i> Cardápio</li>
-                <li class="link-rodape"><i class="fas fa-phone-alt"></i> Contato</li>
-                <li class="link-rodape"><i class="fas fa-users"></i> Sobre nós</li>
-                <li class="link-rodape"><i class="fas fa-shopping-cart"></i> Pedido Online</li>
-            </ul>
-        </div>
-    </footer>
+   <?php include "./includes/rodape.php" ?>
 </body>
 </html> 

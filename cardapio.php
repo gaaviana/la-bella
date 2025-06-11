@@ -12,37 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo"><a href="index.html"><img src="./images/logo.png" alt="Logo Lá Bella"></a></div>
-        <button class="botao-menu" id="botao-menu"><i id="icon-menu" class="fas fa-bars fa-lg"></i></button>
-
-        <nav id="menu" class="menu">
-            <ul>
-                <div class="links">
-                    <div class="link">
-                        <i class="fas fa-home"></i>
-                        <li><a href="index.html">Home</a></li>
-                    </div>
-                    <div class="link">
-                        <i class="fas fa-utensils"></i>
-                        <li><a href="cardapio.html">Cardápio</a></li>
-                    </div>
-                    <div class="link">
-                        <i class="fas fa-phone-alt"></i>
-                        <li><a href="">Contato</a></li>
-                    </div>
-                    <div class="link">
-                        <i class="fas fa-users"></i>
-                        <li><a href="">Sobre Nós</a></li>
-                    </div>
-                    <div class="link">
-                        <i class="fas fa-shopping-cart"></i>
-                        <li><a href="">Pedido Online</a></li>
-                    </div>
-                </div>
-            </ul>
-        </nav>
-    </header>
+    <?php include "./includes/cabecalho.php" ?>
     <main>
         <section class="cardapio-secao">
             <h1 class="cardapio-titulo">M E N U</h1>
@@ -52,7 +22,7 @@
                 <button class="categoria-botao ofertas" style="display: none;">OFERTAS</button>
             </div>
             <div class="cardapio-lista">
-                <a href="item.html" class="cardapio-item-link">
+                <a href="item.php" class="cardapio-item-link">
                     <div class="cardapio-item">
                         <div class="item-imagem"></div>
                         <div class="item-info">
@@ -61,7 +31,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="item.html" class="cardapio-item-link">
+                <a href="item.php" class="cardapio-item-link">
                     <div class="cardapio-item">
                         <div class="item-imagem"></div>
                         <div class="item-info">
@@ -70,7 +40,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="item.html" class="cardapio-item-link">
+                <a href="item.php" class="cardapio-item-link">
                     <div class="cardapio-item">
                         <div class="item-imagem"></div>
                         <div class="item-info">
@@ -79,7 +49,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="item.html" class="cardapio-item-link">
+                <a href="item.php" class="cardapio-item-link">
                     <div class="cardapio-item">
                         <div class="item-imagem"></div>
                         <div class="item-info">
@@ -88,7 +58,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="item.html" class="cardapio-item-link">
+                <a href="item.php" class="cardapio-item-link">
                     <div class="cardapio-item">
                         <div class="item-imagem"></div>
                         <div class="item-info">
@@ -100,17 +70,7 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="rodape">
-            <ul class="links-rodape">
-                <li class="link-rodape"><i class="fas fa-utensils"></i> Cardápio</li>
-                <li class="link-rodape"><i class="fas fa-phone-alt"></i> Contato</li>
-                <li class="link-rodape"><i class="fas fa-users"></i> Sobre nós</li>
-                <li class="link-rodape"><i class="fas fa-shopping-cart"></i> Pedido Online</li>
-            </ul>
-        </div>
-    </footer>
+<?php include "./includes/rodape.php" ?>
     <script src="main.js"></script>
 </body>
 
