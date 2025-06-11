@@ -1,0 +1,15 @@
+{
+    "name": "labella/meu-site",
+    "autoload": {
+        "psr-4": {
+            "Labella": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriel V. Paulino",
+            "email": "gaa.vianaa@gmail.com"
+        }
+    ],
+    "require": {}
+}
