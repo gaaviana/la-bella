@@ -360,6 +360,7 @@ header {
 
 .cardapio-item {
     display: flex;
+    width: 90%;
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;

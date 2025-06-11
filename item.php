@@ -1,3 +1,16 @@
+<?php
+require_once "./vendor/autoload.php";
+
+use LaBella\Services\ProdutoServico;
+
+$produtoServico = new ProdutoServico;
+
+$id = filter_input(INPUT_GET, "item", FILTER_SANITIZE_NUMBER_INT);
+
+$listarUm = $produtoServico->listarUm($id);
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,10 +36,10 @@
     <main class="item-detail">
         <div class="item-image-placeholder"></div>
         <div class="item-info">
-            <h2 class="item-name">Margherita</h2>
-            <span class="item-price">R$35,00</span>
+            <h2 class="item-name"><?=$listarUm['nome']?></h2>
+            <span class="item-price"><?=$listarUm['preco']?></span>
         </div>
-        <p class="item-description">Tomate fresco, mussarela de búfala, manjericão e azeite de oliva.</p>
+        <p class="item-description"><?=$listarUm['descricao']?></p>
 
         <div class="options-section">
             <div class="option-box">

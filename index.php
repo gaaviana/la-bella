@@ -1,3 +1,13 @@
+<?php
+
+require_once "./vendor/autoload.php";
+
+use LaBella\Services\ProdutoServico;
+
+$produtoServico = new ProdutoServico;
+
+$listarProdutos = $produtoServico->listarTodos();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,36 +42,18 @@
         <section class="sessao-carrossel">
             <div class="carrossel">
                 <div class="carrossel-lista">
-                    <a href="item.html" class="cardapio-item-link">
+                    <?php foreach ($listarProdutos as $produto) {?>
+                    <a href="item.php?item=<?=$produto['id']?>" class="cardapio-item-link">
                         <div class="carrossel-item">
                             <div class="carrossel-info">
-                                <h3 class="titulo">Pizza Calabresa</h3>
-                                <p class="descricao">Molho de tomate, queijo, calabresa e cebola</p>
+                                <h3 class="titulo"><?=$produto['nome']?></h3>
+                                <p class="descricao"><?=$produto['descricao']?></p>
                             </div>
                             <img src="./images/pizza.png" alt="Imagem 1" class="carrossel-imagem">
-                            <p class="preco">R$ 39,90</p>
+                            <p class="preco"><?=$produto['preco']?></p>
                         </div>
                     </a>
-                    <a href="item.html" class="cardapio-item-link">
-                        <div class="carrossel-item">
-                            <div class="carrossel-info">
-                                <h3 class="titulo">Pizza 2</h3>
-                                <p class="descricao">Molho de tomate, queijo, calabresa e cebola</p>
-                            </div>
-                            <img src="./images/pizza.png" alt="Imagem 1" class="carrossel-imagem">
-                            <p class="preco">R$ 39,90</p>
-                        </div>
-                    </a>
-                    <a href="item.html" class="cardapio-item-link">
-                        <div class="carrossel-item">
-                            <div class="carrossel-info">
-                                <h3 class="titulo">Pizza 3</h3>
-                                <p class="descricao">Molho de tomate, queijo, calabresa e cebola</p>
-                            </div>
-                            <img src="./images/pizza.png" alt="Imagem 1" class="carrossel-imagem">
-                            <p class="preco">R$ 39,90</p>
-                        </div>
-                    </a>
+                    <?php }?>
                 </div>
                 <button class="anterior">&#10094;</button>
                 <button class="proximo">&#10095;</button>

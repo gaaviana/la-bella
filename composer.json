@@ -2,7 +2,7 @@
     "name": "labella/meu-site",
     "autoload": {
         "psr-4": {
-            "Labella": "src/"
+            "LaBella\\": "src/"
         }
     },
     "authors": [

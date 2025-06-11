@@ -1,3 +1,13 @@
+<?php
+
+require_once "./vendor/autoload.php";
+
+use LaBella\Services\ProdutoServico;
+
+$produtoServico = new ProdutoServico;
+
+$listarProdutos = $produtoServico->listarTodos();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,51 +32,17 @@
                 <button class="categoria-botao ofertas" style="display: none;">OFERTAS</button>
             </div>
             <div class="cardapio-lista">
-                <a href="item.php" class="cardapio-item-link">
+                <?php foreach($listarProdutos as $produto) {?>
+                <a href="item.php?item=<?=$produto['id']?>" class="cardapio-item-link">
                     <div class="cardapio-item">
                         <div class="item-imagem"></div>
                         <div class="item-info">
-                            <h2 class="item-titulo">Margherita</h2>
-                            <p class="item-descricao">Tomate fresco, mussarela de búfala, manjericão e azeite de oliva.</p>
+                            <h2 class="item-titulo"><?=$produto['nome']?></h2>
+                            <p class="item-descricao"><?=$produto['descricao']?></p>
                         </div>
                     </div>
                 </a>
-                <a href="item.php" class="cardapio-item-link">
-                    <div class="cardapio-item">
-                        <div class="item-imagem"></div>
-                        <div class="item-info">
-                            <h2 class="item-titulo">Calabresa</h2>
-                            <p class="item-descricao">Calabresa fatiada, cebola, azeitonas e molho de tomate.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="item.php" class="cardapio-item-link">
-                    <div class="cardapio-item">
-                        <div class="item-imagem"></div>
-                        <div class="item-info">
-                            <h2 class="item-titulo">Frango c/ Catupiry</h2>
-                            <p class="item-descricao">Peito de frango desfiado, catupiry, milho verde e azeitonas.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="item.php" class="cardapio-item-link">
-                    <div class="cardapio-item">
-                        <div class="item-imagem"></div>
-                        <div class="item-info">
-                            <h2 class="item-titulo">Calabresa</h2>
-                            <p class="item-descricao">Calabresa fatiada, cebola, azeitonas e molho de tomate.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="item.php" class="cardapio-item-link">
-                    <div class="cardapio-item">
-                        <div class="item-imagem"></div>
-                        <div class="item-info">
-                            <h2 class="item-titulo">Margherita</h2>
-                            <p class="item-descricao">Tomate fresco, mussarela de búfala, manjericão e azeite de oliva.</p>
-                        </div>
-                    </div>
-                </a>
+                <?php } ?>
             </div>
         </section>
     </main>

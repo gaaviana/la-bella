@@ -24,8 +24,7 @@ abstract class ConexaoBD {
 
                 self::$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (Throwable $erro) {
-                echo $erro->getMessage();
-                throw new Exception("Erro ao conectar ao banco de dados");
+                throw new Exception($erro->getMessage());
             }
         }
         return self::$conexao;
